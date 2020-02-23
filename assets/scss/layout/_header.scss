@@ -1,0 +1,30 @@
+.header {
+  height: 80px;
+  top: 0;
+  z-index: 2;
+  position: absolute;
+  .brand-name {
+    font-size: $font-size-base * 1.5;
+  }
+  .nav {
+    .nav-link {
+      font-size: $font-size-base * 1.2;
+      color: $white;
+    }
+  }
+  @media (max-width: 768px) {
+    .navbar-collapse {
+      position: absolute;
+      background-color: white;
+      width: 100%;
+      left: 0;
+      top: 75px;
+      z-index: 5;
+      .nav-link {
+        color: $dark;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}
